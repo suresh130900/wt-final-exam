@@ -1,0 +1,71 @@
+BODY {
+
+    font-family: Trebuchet MS;
+
+    margin:20px;
+
+    background-color: #51d9fa;
+  }
+  
+
+
+  H1 
+  {
+    text-align: center;
+
+    color: #FFFFFF;
+
+  }
+  
+  .myTimetable 
+  
+  {
+
+    width:100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+  }
+
+
+  
+  .myTimetable THEAD{
+    color: #FFFFFF;
+  }
+  
+  .myTimetable TBODY {
+    background-color: #54e6f3;
+  }
+  
+  .myTimetable TD {
+
+
+    border: 1px solid black;
+    padding: 6px;
+    text-align: center;
+
+  }
+
+
+  .myTimetable TBODY TR TD:first-child {
+
+    background-color: rgb(200, 249, 151);
+
+    font-weight: bold;
+  }
+  
+  .break{
+
+    background-color: #4e5b03 !important;
+
+    font-style: italic;
+  }
+  
+  .subject {
+    font-size: 12pt;
+    margin-bottom:4px;
+  }
+  
+  
+  

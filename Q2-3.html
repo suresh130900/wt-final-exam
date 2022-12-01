@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Christmas
+        </title>
+    </head>
+    <body>
+
+        <h3>Days left till Christmas are: </h3>
+        <button type="submit" onclick="days_left()">Days left</button>
+        <script>
+            function days_left()
+            {
+                
+                var d  = new Date("12/25/"+new Date().getFullYear());
+                var today = new Date();
+                var tleft = d - today;
+                alert("TIME LEFT FOR Christmas are " + Math.floor(tleft/(1000*60*60*24)) + " DAYS");
+            }
+        </script>
+    </body>
+</html>

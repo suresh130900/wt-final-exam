@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2> Arrays</h2>
+
+
+
+<p id="demo"></p>
+
+<p id="demo1"></p>
+
+<script>
+    function arr()
+    {
+const points = [70000, 100000, 26900, 30000, 35000, 10000];
+points.sort(function(a, b){return b-a});
+document.getElementById("demo").innerHTML = points;
+    }
+    arr();
+
+
+
+
+function arr1()
+{
+
+    const points = [70000, 100000, 26900, 30000, 35000, 10000];
+    points.sort(function(a, b){return a-b});
+    document.getElementById("demo1").innerHTML = points;
+}
+arr1();
+</script>
+
+</body>
+</html>
+

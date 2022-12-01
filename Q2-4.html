@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Salary
+        </title>
+    </head>
+    <body>
+      
+        <script>
+            function salary()
+            {
+                
+                var exp = prompt("You have experience: ");
+                var age = prompt("Enter your age: ");
+
+                age = parseInt(age);
+                var salary = 0;
+
+                //exp = parseInt(exp);
+                age = parseInt(age);
+                //document.write(exp);
+
+                if(age>=35 && exp=="yes")
+                {
+                    salary = 6000;
+                    document.write("The Salary is:",salary);
+                }
+
+                else if((exp=="yes" && age>=28) && (exp=="yes" && age<35))
+                {
+                    salary = 4800;
+                    document.write("The Salary is: ",salary);
+                }
+                else if(age<28 && exp=="yes")
+                {
+                    salary = 3000;
+                    document.write("The Salary is: ",salary);
+                }
+                else if(age<28 && exp=="no")
+                {
+                    salary = 2000;
+                    document.write("The Salary is: ",salary);   
+                }
+                
+            }
+
+            salary();
+        </script>
+    </body>
+</html>
