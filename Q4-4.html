@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARRAY OBJ</title>
+</head>
+<body>
+Cart Items : 
+
+    <div id="cart">
+
+    </div>
+    <script>
+
+
+var data = [
+            {
+
+                productid : 1,
+                productName : "Mobile",
+                price : 70000
+            },
+
+            {
+                productid : 2,
+                productName : "Laptop",
+                price : 100000
+            },
+
+            {
+                productid : 3,
+                productName : "Airpods",
+                price : 26900
+            },
+
+            {
+                productid : 4,
+                productName : "Watch",
+                price : 30000
+            },
+
+            {
+                productid : 5,
+                productName : "Shoes",
+                price : 35000
+            },
+            {
+                productid : 6,
+                productName : "Bag",
+                price : 10000
+            },
+        ];
+
+
+        var carttotal = 0;
+            
+                data.forEach(a => {
+
+                    
+
+                   carttotal += a['price'];
+                });
+                var cart = document.getElementById("cart");
+                data.forEach(a => {
+
+                    cart.innerHTML += a['productid'] + ") " + a['productName'] + "<br>";
+            });
+
+ cart.innerHTML += "<br> Cart Total is "+carttotal
+
+    </script>
+</body>
+</html>
+
+
